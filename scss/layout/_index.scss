@@ -1,0 +1,61 @@
+.portada{
+    background-image: url(../imagenes/portada.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.portada h1{
+    font-size: 100px;
+}
+.portada p{
+    font-size: 35px;
+}
+
+.main-content {
+    background-color: #B55F13;
+    font-size: 25px;
+    text-align: center;
+    padding: 35px;
+}
+    
+
+.segundaseccion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  .segundaseccion .tarjeta {
+    width: 450px;
+    background-color: beige;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+  }
+  .segundaseccion .tarjeta img {
+    width: 100%;
+    height: auto;
+  }
+  .segundaseccion .tarjeta-contenido {
+    padding: 16px;
+  }
+  .segundaseccion .tarjeta-contenido h3 {
+    font-size: 28px;
+    margin-top: 8px;
+  }
+  .segundaseccion .tarjeta-contenido p {
+    color: rgba(126, 123, 123, 0.8);
+    font-size: medium;
+    line-height: 1.3;
+  }
+  .segundaseccion .tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+  }

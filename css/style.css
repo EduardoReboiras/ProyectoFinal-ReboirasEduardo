@@ -1,0 +1,436 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: #B55F13;
+}
+
+label.logo {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+}
+
+label.logo a {
+  text-decoration: none;
+  color: rgb(243, 252, 255);
+}
+
+nav ul {
+  float: right;
+  margin-right: 80px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 7px 14px;
+  border-radius: 3px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+footer {
+  background-color: rgb(165, 87, 42);
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  color: black;
+}
+
+.ig {
+  height: 50px;
+  padding-left: 50px;
+}
+
+.portada {
+  background-image: url(../imagenes/portada.jpeg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.portada h1 {
+  font-size: 100px;
+}
+
+.portada p {
+  font-size: 35px;
+}
+
+.main-content {
+  background-color: #B55F13;
+  font-size: 25px;
+  text-align: center;
+  padding: 35px;
+}
+
+.segundaseccion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.segundaseccion .tarjeta {
+  width: 450px;
+  background-color: beige;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.segundaseccion .tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.segundaseccion .tarjeta-contenido {
+  padding: 16px;
+}
+
+.segundaseccion .tarjeta-contenido h3 {
+  font-size: 28px;
+  margin-top: 8px;
+}
+
+.segundaseccion .tarjeta-contenido p {
+  color: rgba(126, 123, 123, 0.8);
+  font-size: medium;
+  line-height: 1.3;
+}
+
+.segundaseccion .tarjeta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+}
+
+.seccion-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.seccion-productos .productos {
+  width: 450px;
+  background-color: beige;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  transition: all 400ms ease;
+}
+
+.seccion-productos .productos img {
+  width: 100%;
+  height: auto;
+}
+
+.seccion-productos.tarjeta-productos {
+  padding: 16px;
+}
+
+.seccion-productos .tarjeta-productos h3 {
+  font-size: 28px;
+  margin-top: 8px;
+}
+
+.seccion-productos .tarjeta-productos p {
+  color: rgba(126, 123, 123, 0.8);
+  font-size: medium;
+  line-height: 1.3;
+}
+
+.seccion-productos .productos:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%);
+}
+
+.body1 {
+  background-image: url(../imagenes/portada.jpeg);
+  background-size: cover;
+}
+
+.nosotros {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 70%;
+  margin: 15px auto;
+  border-radius: 20px;
+  box-shadow: 10 px 10px 10px rgba(246, 193, 141, 0.805);
+}
+
+.nosotros img {
+  width: 350px;
+  border-radius: 30px;
+  border: solid 3px white;
+}
+
+.nosotros h2 {
+  margin: 0;
+  color: #0082e6;
+}
+
+.nosotros p {
+  margin-right: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.ul {
+  margin-right: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.seccion-desayunos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: beige;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .desayuno {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .merienda {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+}
+
+.card .merienda img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .merienda h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(204, 124, 3);
+  background: rgba(246, 193, 141, 0.805);
+  text-align: center;
+}
+
+.card .brunch {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(174, 95, 4);
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px rgb(150, 110, 1);
+}
+
+.card .brunch h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .brunch p {
+  letter-spacing: 1px;
+}
+
+.card:hover .desayuno {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .brunch {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/portada.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contactos-contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 100px;
+  gap: 10px;
+  width: 1000px;
+}
+
+.box-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.box-info > h1 {
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.63);
+  border: 5px solid transparent;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  color: #000000;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+  color: #000000;
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+  color: transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+  border-bottom: 3px solid rgb(5, 5, 5);
+  animation: shake 0.2s;
+}
+
+.input-box > textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.558);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.3s;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.input-box > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.input-box > input:focus ~ i {
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1067px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1242px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background: #2c3e50;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  a.active, a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

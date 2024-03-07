@@ -1,0 +1,36 @@
+.body1{
+    background-image: url(../imagenes/portada.jpeg);
+    background-size: cover;
+  
+  }
+  .nosotros{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 70%;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 10 px 10px 10px rgba(246, 193, 141, 0.805);
+  
+  }
+  .nosotros img {
+    width: 350px;
+    border-radius: 30px;
+    border: solid 3px white;
+  }
+  .nosotros h2{
+    margin: 0;
+    color: #0082e6;
+  }
+  
+  .nosotros p{
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .ul{
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 20px
+  }
